@@ -8,6 +8,16 @@
 
 #import "MyClass.h"
 
+@interface MyClass ()
+{
+    NSInteger _instance1;
+    NSString * _instance2;
+}
+@property (nonatomic,assign)NSUInteger integer;
+
+- (void)method3WithArg1:(NSInteger)arg1 arg2:(NSString *)arg2;
+
+@end
 @implementation MyClass
 
 
