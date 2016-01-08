@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		785331EB1C3E5F82002717E0 /* UIView+TapGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 785331EA1C3E5F82002717E0 /* UIView+TapGesture.m */; };
+		78E7CFD01C3F53DB004A5AB0 /* UIViewController+IMP_C.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E7CFCF1C3F53DB004A5AB0 /* UIViewController+IMP_C.m */; };
 		78EBBC8F1C34FBA900BC5A6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EBBC8E1C34FBA900BC5A6A /* main.m */; };
 		78EBBC921C34FBA900BC5A6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EBBC911C34FBA900BC5A6A /* AppDelegate.m */; };
 		78EBBC951C34FBA900BC5A6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EBBC941C34FBA900BC5A6A /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* Begin PBXFileReference section */
 		785331E91C3E5F82002717E0 /* UIView+TapGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TapGesture.h"; sourceTree = "<group>"; };
 		785331EA1C3E5F82002717E0 /* UIView+TapGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TapGesture.m"; sourceTree = "<group>"; };
+		78E7CFCE1C3F53DB004A5AB0 /* UIViewController+IMP_C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IMP_C.h"; sourceTree = "<group>"; };
+		78E7CFCF1C3F53DB004A5AB0 /* UIViewController+IMP_C.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IMP_C.m"; sourceTree = "<group>"; };
 		78EBBC891C34FBA900BC5A6A /* runtimeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtimeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EBBC8D1C34FBA900BC5A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78EBBC8E1C34FBA900BC5A6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				78EBBCC11C351E8600BC5A6A /* NSObject+addProperty.m */,
 				785331E91C3E5F82002717E0 /* UIView+TapGesture.h */,
 				785331EA1C3E5F82002717E0 /* UIView+TapGesture.m */,
+				78E7CFCE1C3F53DB004A5AB0 /* UIViewController+IMP_C.h */,
+				78E7CFCF1C3F53DB004A5AB0 /* UIViewController+IMP_C.m */,
 			);
 			name = practice;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E7CFD01C3F53DB004A5AB0 /* UIViewController+IMP_C.m in Sources */,
 				78EBBCBC1C3513BD00BC5A6A /* Person.m in Sources */,
 				78EBBCC21C351E8600BC5A6A /* NSObject+addProperty.m in Sources */,
 				78EBBCB51C34FC4E00BC5A6A /* MyClass.m in Sources */,
