@@ -14,6 +14,7 @@
 #import "NSObject+addProperty.h"
 #import "UIView+TapGesture.h"
 #import "MyClass.h"
+#import "PersonModel.h"
 static char kDTActionHandlerTapGestureKey;
 @interface ViewController ()
 @property (retain, nonatomic) IBOutlet UIImageView *testImageView;
@@ -36,8 +37,27 @@ static char kDTActionHandlerTapGestureKey;
     
     /**4.创建关联对象*/
     [self createAssociate_Object];
+    
+    /**5.消息转发*/
+    [self message_Sending];
 }
 
+- (void)message_Sending{
+    PersonModel *personModel = [[PersonModel alloc] init];
+    
+    //消息转发 resolveInstanceMethod---动态方法解析
+    personModel.name = @"bource Li";
+    NSString *name = personModel.name;
+    NSLog(@"%@",name);
+    
+    //消息转发forwardingTargetForSelector---备用接收者
+    NSString *name1 = [personModel companyName];
+    NSLog(@"%@",name1);
+    
+    //消息转发forwardInvocation
+    NSString *name2 = [personModel deptName];
+    NSLog(@"%@",name2);
+}
 - (void)createAssociate_Object{
     [self.view setTapActionWithBlock:^{
         NSLog(@"定制点击效果，，，如何？");
